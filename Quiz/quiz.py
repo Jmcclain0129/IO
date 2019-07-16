@@ -26,7 +26,7 @@ def ask_questions():
 
     for question, answer in questions_and_answers:
         guess = input(question + "> ")
-        if guess == answers:
+        if guess == answer:
             score += 1
             print("right!")
             print(score)
@@ -34,9 +34,6 @@ def ask_questions():
             print("wrong!")
 
     print("You got {0} correct out of {1}".format(score, number_of_questions))
-
-
-
 
 
 def add_question():
@@ -63,6 +60,6 @@ def game_loop():
             break
         else:
             print("Invalid option")
-            print("")
+        print("")
 
 game_loop()
